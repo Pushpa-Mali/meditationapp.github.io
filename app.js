@@ -43,12 +43,12 @@ const checkPlaying = song => {
     if(song.paused){
         song.play();
         video.play();
-        play.src='./meditation-app/svg/pause.svg';
+        play.src='pause.svg';
     }
     else{
         song.pause();
         video.pause();
-        play.src='./meditation-app/svg/play.svg'
+        play.src='play.svg'
     }
 }
 
@@ -69,7 +69,7 @@ song.ontimeupdate = () =>{
     if(currentTime >= fakeDuration){
         song.pause();
         song.currentTime=0;
-        play.src='./meditation-app/svg/play.svg'
+        play.src='play.svg'
         video.pause();
     }
 }
